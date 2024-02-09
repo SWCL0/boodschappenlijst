@@ -2,7 +2,7 @@
 
 $productenv = array();
 
-echo "Hoeveel producten wil je toevoegen? ";
+echo "Hoeveel producten wil je toevoegen?" . PHP_EOL;
 $aantalProducten = readline();
 
 for ($i = 1; $i <= $aantalProducten; $i++) {
@@ -10,6 +10,9 @@ for ($i = 1; $i <= $aantalProducten; $i++) {
     $producten[] = readline();
 }
 
-var_dump($producten);
+echo PHP_EOL . "De volgende producten staan op je boodschappenlijstje:" . PHP_EOL;
+foreach ($producten as $boodschappen) {
+    echo $boodschappen . PHP_EOL;
+}
 
 ?>
