@@ -1,6 +1,6 @@
 <?php
 
-$productenv = array();
+$producten = array();
 
 echo "Hoeveel producten wil je toevoegen?" . PHP_EOL;
 $aantalProducten = readline();
